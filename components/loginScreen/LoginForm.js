@@ -1,10 +1,8 @@
-import { View, Text, TextInput, StyleSheet, Pressable, TouchableOpacity } from 'react-native'
+import { View, Text, TextInput, StyleSheet, Pressable, TouchableOpacity, Alert } from 'react-native'
 import { Formik } from 'formik'
 import * as yup from 'yup'
 import Validator from 'email-validator'
 import React, { useState } from 'react'
-
-
 
 const LoginForm = ({navigation}) => {
     const LoginFormSchema = yup.object().shape({
